@@ -20,12 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="odeequations.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="parameters.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\odeint.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -37,6 +31,12 @@
     </ClInclude>
     <ClInclude Include="..\include\nr3.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="parameters.cc">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="odeequations.cc">
+      <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

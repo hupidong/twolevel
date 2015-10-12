@@ -7,8 +7,8 @@
 #include"../include/odeint.h"
 #include"../include/stepper.h"
 #include"../include/stepperdopr853.h"
-#include "parameters.h"
-#include "odeequations.h"
+#include "parameters.cc"
+#include "odeequations.cc"
 
 namespace BFS = boost::filesystem;
 using namespace std;

@@ -85,8 +85,8 @@
     <ClInclude Include="..\include\odeint.h" />
     <ClInclude Include="..\include\stepper.h" />
     <ClInclude Include="..\include\stepperdopr853.h" />
-    <ClInclude Include="odeequations.h" />
-    <ClInclude Include="parameters.h" />
+    <ClInclude Include="odeequations.cc" />
+    <ClInclude Include="parameters.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
