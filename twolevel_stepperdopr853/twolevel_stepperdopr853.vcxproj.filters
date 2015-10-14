@@ -32,10 +32,10 @@
     <ClInclude Include="..\include\nr3.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="parameters.cc">
+    <ClInclude Include="odeequations.cc">
       <Filter>源文件</Filter>
     </ClInclude>
-    <ClInclude Include="odeequations.cc">
+    <ClInclude Include="parameters.cc">
       <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
