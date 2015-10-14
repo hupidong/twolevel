@@ -213,14 +213,15 @@ int main(int argc, char* argv[])
 
 
 	/////将平均偶极矩计算结果写入文件dipole.txt/////	
-	/////time + dipole with mu11&mu22 + dipole without mu11&mu22
+	/////time + dipole with mu11&mu22 + dipole without mu11&mu22 + dipole with mu11&mu22 but without DC component
 	BFS::ofstream dipole(path_res / "dipole.txt", std::ofstream::out | std::ofstream::trunc);
 	writeformat(dipole,FloatPonitNumber);
 	for (i = 0; i < out.count - 2; i++)
 	{
 		time_output << out.xsave[i] / T<<endl;
 		dipole << Natoms*(mu*out.ysave[0][i] + mu_11*(1.0 - out.ysave[2][i])/ 2.0 + mu_22*(1.0 + out.ysave[2][i]) / 2.0)
-			   << " " << Natoms*mu*out.ysave[0][i] <<endl;
+			   << " " << Natoms*mu*out.ysave[0][i] 
+			   <<" "<<Natoms*mu*(out.ysave[0][i]+xi*out.ysave[2][i])<<endl;
 	}
 	time_output.close();
 	dipole.close();
