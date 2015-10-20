@@ -149,7 +149,7 @@ int main(int argc, char* argv[])
 	{
 		if (IF_Chirp == 0)
 		{
-			chirp_phase = 0;
+			chirp_phase = 0.0;
 		}
 		else
 		{
@@ -169,7 +169,7 @@ int main(int argc, char* argv[])
 		}
 		else if (laserchoice == 1)
 		{
-			laser_field[i] = rabbi_0 / mu*exp(-4 * log(2)*t*t / dur / dur)*cos(omega_L*t + chirp_phase);	//高斯型激光场
+			laser_field[i] = rabbi_0 / mu*exp(-4.0 * log(2.0)*t*t / dur / dur)*cos(omega_L*t + chirp_phase);	//高斯型激光场
 		}
 		else if (laserchoice == 2)
 		{

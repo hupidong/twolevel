@@ -12,7 +12,7 @@ static double T;
 static double dur;
 static int IF_Chirp;
 static double eta = 6.25;
-static double tao = 120;
+static double tao = 120.0;
 static double chirp_phase;
 static int decaySwitch=1;
 static double T1(1.0E-12 / 2.418884326505E-17);

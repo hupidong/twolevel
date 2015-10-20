@@ -18,7 +18,7 @@ struct rhs_van
 		}
 		else if (laserchoice == 1)
 		{
-			rabbi_tmp = rabbi_0*exp(-4 * log(2)*x*x / dur / dur)*cos(omega_L*x + chirp_phase);	//高斯型激光场
+			rabbi_tmp = rabbi_0*exp(-4.0 * log(2.0)*x*x / dur / dur)*cos(omega_L*x + chirp_phase);	//高斯型激光场
 		}
 		else if (laserchoice == 2)
 		{
